@@ -1,38 +1,63 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  padding: 100px 20%;
+  background: lightgray;
+}
+
+/* Sidebar */
+
+.sidebar {
+  width: 25%;
+  margin-right: 10px;
+  border-radius: 5px 0 0 5px;
+  background: white;
+}
+
+.sidebar-header {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  border-bottom: 1px solid lightgray;
+}
+
+.sidebar button {
+  background: slateblue;
+  color: white;
+  cursor: pointer;
+}
+.sidebar ul {
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar ul li {
+  list-style: none;
+  padding: 20px 0;
+  cursor: pointer;
+  padding: 20px 0 20px 20px;
+}
+
+.selected {
+  background: slateblue;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Editor */
+
+.editor {
+  width: 75%;
+  background: white;
+  border-radius: 0 5px 5px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.editor-header {
+  padding: 20px;
+  border-bottom: 1px solid lightgray;
+}
+
+.editor-body textarea {
+  width: 99%;
+  border: white;
+  resize: vertical;
 }
