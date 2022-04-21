@@ -4,7 +4,7 @@ export default function Editor(props) {console.log(2)
       <li
         key={note.id}
         id={note.id}
-        className={note.id === props.currentNote ? "selected" : ""}
+        className={note.id === props.currentNoteId ? "selected" : ""}
         onClick={props.selectNote}>
         {note.note}
       </li>

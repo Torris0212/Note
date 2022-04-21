@@ -1,5 +1,5 @@
 export default function Editor(props) {console.log(3);
-  const text = props.notes.filter((note) => { return note.id === props.currentNote});
+  const text = props.notes.filter((note) => { return note.id === props.currentNoteId});
   const textContent = text[0].content;
 
   return (
