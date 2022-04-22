@@ -1,4 +1,4 @@
-export default function Editor(props) {console.log(2)
+export default function Editor(props) {
   const noteElements = props.notes.map(note => {
     return (
       <li
