@@ -1,7 +1,4 @@
 export default function Editor(props) {
-  const text = props.notes.filter((note) => { return note.id === props.currentNoteId});
-  const textContent = text[0].content;
-
   return (
     <section className="editor">
       <div className="editor-header">
@@ -9,9 +6,7 @@ export default function Editor(props) {
       </div>
       <div className="editor-body">
         <textarea
-          rows="50"
-          value={textContent}
-          onChange={props.updateContent}>
+          rows="50">
         </textarea>
       </div>
     </section>

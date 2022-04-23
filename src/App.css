@@ -21,26 +21,34 @@
   border-bottom: 1px solid lightgray;
 }
 
-.sidebar button {
+.sidebar .add-new-note {
   background: slateblue;
   color: white;
   cursor: pointer;
 }
-.sidebar ul {
-  margin: 0;
-  padding: 0;
-}
 
-.sidebar ul li {
-  list-style: none;
-  padding: 20px 0;
+.sidebar-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
   cursor: pointer;
-  padding: 20px 0 20px 20px;
 }
 
-.selected {
-  background: slateblue;
+.sidebar-summary--selected {
+  background-color: slateblue;
   color: white;
+}
+
+.sidebar-delete-btn {
+  background-color: slateblue;
+  color: white;
+  padding: 5px 10px;
+}
+
+.sidebar-delete-btn--selected {
+  background: white;
+  color: slateblue;
 }
 
 /* Editor */
